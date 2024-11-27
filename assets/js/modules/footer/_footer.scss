@@ -32,6 +32,11 @@ footer {
         flex-direction: column;
         justify-content: center;
         padding: 0 1rem;
+        #footerContentLi1A{
+            color: darkorange;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
         a {
           text-decoration: none;
           list-style: none;
@@ -41,12 +46,10 @@ footer {
           font-weight: 500;
           font-size: 1.1rem;
           padding-left: 2rem;
-          :hover {
-            color: darkorange;
-            font-size: 1.1rem;
+          
           }
         }
       }
     }
   }
-}
+

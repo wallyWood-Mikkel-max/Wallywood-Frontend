@@ -90,6 +90,12 @@ footer .footerContent ul .footerContentLi1 {
   justify-content: center;
   padding: 0 1rem;
 }
+footer .footerContent ul .footerContentLi2 #footerContentLi1A,
+footer .footerContent ul .footerContentLi1 #footerContentLi1A {
+  color: darkorange;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
 footer .footerContent ul .footerContentLi2 a,
 footer .footerContent ul .footerContentLi1 a {
   text-decoration: none;
@@ -100,9 +106,4 @@ footer .footerContent ul .footerContentLi1 a {
   font-weight: 500;
   font-size: 1.1rem;
   padding-left: 2rem;
-}
-footer .footerContent ul .footerContentLi2 a :hover,
-footer .footerContent ul .footerContentLi1 a :hover {
-  color: darkorange;
-  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */

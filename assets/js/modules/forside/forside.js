@@ -15,11 +15,12 @@ export const buildForside = () =>{
     forsideH2.innerText = `Fire tilfældige...`
     forsideSection.append(forsideH2)
 
-    const forsideCardSection = document.createElement('forsideCardSection')
-    forsideCardSection = document.setAttribute('id', 'forsideCardSection')
+    const forsideCardSection = document.createElement('section')
+    forsideCardSection.setAttribute('id', 'forsideCardSection')
     forsideSection.append(forsideCardSection)
 
-    const forsideCard = document.createElement('forsideCard')
-    forsideCard = document.setAttribute('id', forsideCard)
+    const forsideCard = document.createElement('section')
+    forsideCard.setAttribute('id', 'forsideCard')
+    forsideCardSection.append(forsideCard)
 
 }

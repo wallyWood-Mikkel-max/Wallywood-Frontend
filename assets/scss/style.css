@@ -60,6 +60,12 @@ footer {
   width: 100%;
   height: auto;
 }
+footer hr {
+  border: solid 1px black;
+  margin: 0.8rem;
+  margin-left: 0;
+  width: 100%;
+}
 footer .footerContent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -69,27 +75,34 @@ footer .footerContent div {
   justify-content: flex-end;
 }
 footer .footerContent div img {
-  width: 20%;
-  height: 35%;
+  width: 27%;
+  height: 40%;
   padding: 0.5rem;
 }
 footer .footerContent ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-footer .footerContent ul .footerContentLi2, footer .footerContent ul .footerContentLi1 {
+footer .footerContent ul .footerContentLi2,
+footer .footerContent ul .footerContentLi1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 1rem;
 }
-footer .footerContent ul .footerContentLi2 a, footer .footerContent ul .footerContentLi1 a {
+footer .footerContent ul .footerContentLi2 a,
+footer .footerContent ul .footerContentLi1 a {
   text-decoration: none;
+  list-style: none;
+  color: black;
   margin-bottom: 0.5rem;
   text-align: left;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  padding-left: 2rem;
 }
-footer .footerContent ul .footerContentLi2 #footerContentLi1A, footer .footerContent ul .footerContentLi1 #footerContentLi1A {
+footer .footerContent ul .footerContentLi2 a :hover,
+footer .footerContent ul .footerContentLi1 a :hover {
   color: darkorange;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=style.css.map */

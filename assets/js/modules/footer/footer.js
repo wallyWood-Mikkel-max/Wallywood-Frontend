@@ -22,15 +22,17 @@ export const buildFooter = () => {
 
   const footerContentLi1A = document.createElement("a");
   footerContentLi1A.setAttribute("id", "footerContentLi1A");
-
+  footerContentLi1A.setAttribute("href", "#");
   footerContentLi1A.innerText = "WALLYWOOD";
   footerContentLi1.append(footerContentLi1A);
 
   const footerContentLi6A = document.createElement("a");
+  footerContentLi6A.setAttribute("href", "#");
   footerContentLi6A.innerText = "Øster uttrupvej 1, 9000 Aalborg";
   footerContentLi1.append(footerContentLi6A);
 
   const footerContentLi7A = document.createElement("a");
+  footerContentLi7A.setAttribute("href", "#");
   footerContentLi7A.innerText = "9000 Allborg";
   footerContentLi1.append(footerContentLi7A);
 
@@ -39,17 +41,19 @@ export const buildFooter = () => {
   footerContentUl1.append(footerContentLi2);
 
   const footerContentLi3A = document.createElement("a");
+  footerContentLi3A.setAttribute("href", "#");
   footerContentLi3A.innerText = "CVR: 12341234";
   footerContentLi2.append(footerContentLi3A);
 
   const footerContentLi4A = document.createElement("a");
+  footerContentLi4A.setAttribute("href", "mailto:info@wallywood.com");
   footerContentLi4A.innerText = "MAIL: info@wallywood.com";
   footerContentLi2.append(footerContentLi4A);
 
   const footerContentLi5A = document.createElement("a");
+  footerContentLi5A.setAttribute("href", "tel:+4512345678");
   footerContentLi5A.innerText = "MOBIL: 45+ 12345678";
   footerContentLi2.append(footerContentLi5A);
-  // right side
 
   const footerContentDiv = document.createElement("div");
   footerContent.append(footerContentDiv);
@@ -58,7 +62,6 @@ export const buildFooter = () => {
   footerContentImg.setAttribute("id", "footerContentImg");
   footerContentImg.src = "./assets/_FILES/Social Media Icons.png";
   footerContentDiv.append(footerContentImg);
-
 
   main.append(footer);
 };

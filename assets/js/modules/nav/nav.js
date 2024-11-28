@@ -2,11 +2,11 @@ export const buildNav = () =>{
     const main = document.getElementById('main')
 
     const arrItems = [
-        "FORSIDE",
-        "PLAKATER",
-        "OM OS",
-        "KONTAKT OS",
-        "LOGIN"
+        { title: "FORSIDE", ID: "forsideText"},
+		{ title: "PLAKATER", ID: "forsidePlakater"},
+		{ title: "OM OS", ID: "forsideOm"},
+		{ title: "KONTAKT OS", ID: "forsideKontakt"},
+        { title: "LOGIN", ID: "forsideLogin"},
     ]
 
     const navSection = document.createElement('section');
@@ -22,8 +22,9 @@ export const buildNav = () =>{
      
     for(let item of arrItems) {
         const navText = document.createElement('p')
-        navText.innerText = `${item}`
-        navText.setAttribute('id', 'navText')
+        navText.innerText = `${item.title}`
+        navText.setAttribute('id', `${item.ID}`)
+        navText.setAttribute('class', `navText`)
         
         navSection.append(textSection)
         textSection.append(navText)

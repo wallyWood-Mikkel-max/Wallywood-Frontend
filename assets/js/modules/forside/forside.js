@@ -1,3 +1,18 @@
+export const myFetch = async (url, method = 'GET') => {
+	try {
+		const response = await fetch(url, {
+			method
+		})
+		if(!response.ok) {
+			throw new Error(`Fejl i myFetch: ${response.status} - ${response.statusText}`)
+		}
+		const data = await response.json()
+		return data;
+	} catch (error) {
+		console.error(error)
+	}
+}
+
 export const buildForside = () =>{
     const main = document.getElementById('main')
 
@@ -22,5 +37,4 @@ export const buildForside = () =>{
     const forsideCard = document.createElement('section')
     forsideCard.setAttribute('id', 'forsideCard')
     forsideCardSection.append(forsideCard)
-
 }

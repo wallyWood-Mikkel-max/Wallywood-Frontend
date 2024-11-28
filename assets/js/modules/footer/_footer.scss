@@ -1,0 +1,43 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    .footerContent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        div{
+            display: flex;
+            justify-content: flex-end;
+
+            img{
+          width: 20%;
+          height: 35%;
+          padding: 0.5rem;
+            }
+
+        }
+
+        ul{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .footerContentLi2, .footerContentLi1{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 1rem;
+                a{
+                    text-decoration: none;
+                    margin-bottom: 0.5rem;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 1.2rem;
+                
+                }
+                #footerContentLi1A{
+                    color: darkorange;
+                }
+            }
+        }
+    }
+}

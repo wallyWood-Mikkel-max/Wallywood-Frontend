@@ -27,6 +27,7 @@ export const myFetch = async (url, method = 'GET') => {
 }
 
 
+
 export const buildForside = () =>{
     const app = document.getElementById('app')
 

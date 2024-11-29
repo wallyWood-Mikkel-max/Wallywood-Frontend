@@ -5,6 +5,9 @@ import { buildListe } from './modules/lister/lister.js';
 import { buildOm } from './modules/om-os/om-os.js';
 import { myFetch } from './modules/forside/forside.js';
 
+//line 9 code protected by god dont touch it by any means !IMPORTANT
+buildNav();
+
 const getPosters = async () => {
     try {
         const posters = await myFetch('http://localhost:4000/posters', 'GET');
@@ -13,17 +16,16 @@ const getPosters = async () => {
         console.error('Error fetching posters:', error);
     }
 }
-
-buildNav();
-buildForside();
-buildFooter();
-getPosters();
-
 const main = document.getElementById('main')
 
 const app = document.createElement('section')
 app.setAttribute('id', 'app')
 main.append(app)
+
+buildForside();
+getPosters();
+buildFooter();
+
 
 const forsidePlakater = document.getElementById('forsidePlakater')
 const forsideText = document.getElementById('forsideText')

@@ -1,15 +1,28 @@
 export const myFetch = async (url, method = 'GET') => {
 	try {
-		const response = await fetch(url, {
-			method
-		})
-		if(!response.ok) {
-			throw new Error(`Fejl i myFetch: ${response.status} - ${response.statusText}`)
+		const options = {
+			method,
+			mode: 'cors',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			credentials: 'include'
+		};
+
+		console.log('Fetching from:', url, 'with options:', options);
+		
+		const response = await fetch(url, options);
+		
+		if (!response.ok) {
+			throw new Error(`HTTP error! status: ${response.status}`);
 		}
-		const data = await response.json()
+		
+		const data = await response.json();
 		return data;
+		
 	} catch (error) {
-		console.error(error)
+		console.error('Fetch error:', error.message);
+		throw error; // Re-throw the error so we can handle it where the function is called
 	}
 }
 

@@ -3,7 +3,7 @@ export const buildListe = () =>{
 
     const listeSection = document.createElement('section')
     listeSection.setAttribute('id', 'listeSection')
-    main.append(listeSection)
+    app.append(listeSection)
 
     const listeHero = document.createElement('img');
     listeHero.setAttribute('id', 'listeHero')

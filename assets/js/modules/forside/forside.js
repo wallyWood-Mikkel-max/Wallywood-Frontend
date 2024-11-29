@@ -13,12 +13,13 @@ export const myFetch = async (url, method = 'GET') => {
 	}
 }
 
+
 export const buildForside = () =>{
-    const main = document.getElementById('main')
+    const app = document.getElementById('app')
 
     const forsideSection = document.createElement('section')
     forsideSection.setAttribute('id', 'forsideSection')
-    main.append(forsideSection)
+    app.append(forsideSection)
 
     const forsideHero = document.createElement('img');
     forsideHero.setAttribute('id', 'forsideHero')

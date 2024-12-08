@@ -76,7 +76,7 @@ export const buildForside = async () => {
     posterFigure.appendChild(posterDescription);
 
     const posterGenre = document.createElement('p');
-    posterGenre.innerText = `Genre: ${poster.genre || 'Unknown'}`;
+    posterGenre.innerText = `Genre: ${poster.genre || 'Unknown'}`; // Assuming genre is part of the poster object
     posterFigure.appendChild(posterGenre);
 
     const readMoreButton = document.createElement('button');

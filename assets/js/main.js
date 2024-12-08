@@ -1,17 +1,19 @@
 import {buildNav} from './modules/nav/nav.js';
-import {buildForside} from './modules/forside/forside.js';
+import {buildForside} from './modules/footer/forside/forside.js';
 import { buildFooter } from './modules/footer/footer.js';
 import { buildListe } from './modules/lister/lister.js';
 import { buildOm } from './modules/om-os/om-os.js';
-import { myFetch } from './modules/forside/forside.js';
+import { myFetch } from './modules/footer/forside/forside.js';
+
 
 //line 9 code protected by god dont touch it by any means !IMPORTANT
 buildNav();
 
-const getPosters = async () => {
+ export const getPosters = async () => {
     try {
         const posters = await myFetch('http://localhost:4000/posters', 'GET');
-        console.log('Received posters:', posters);
+        console.log('Received posters:');
+        return posters
     } catch (error) {
         console.error('Error fetching posters:', error);
     }

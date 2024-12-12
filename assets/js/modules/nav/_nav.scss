@@ -1,0 +1,54 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: 300;
+}
+
+body{
+  height: 100%;
+  width: 1200px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+}
+
+#navSection{
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid #5C1F06 2px;
+}
+
+#navLogo{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #d97852;
+}
+
+.navText{
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+#navBasket{
+    height: 2rem;
+    width: 2rem;
+}
+
+#navLogo{
+  cursor: pointer;
+}
